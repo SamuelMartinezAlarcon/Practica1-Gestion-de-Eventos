@@ -1,0 +1,26 @@
+{
+  "name": "proy-primer-trimestre",
+  "version": "1.0.0",
+  "description": "> **Asignatura:** Despliegue de Aplicaciones Web (DAW) — 2º DAW   > **Curso Académico:** 2026/2027   > **Proyecto:** Práctica del 1.ᵉʳ Trimestre",
+  "homepage": "https://github.com/SamuelMartinezAlarcon/Proyecto---Samuel-Mart-nez-Alarc-n#readme",
+  "bugs": {
+    "url": "https://github.com/SamuelMartinezAlarcon/Proyecto---Samuel-Mart-nez-Alarc-n/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SamuelMartinezAlarcon/Proyecto---Samuel-Mart-nez-Alarc-n.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "dotenv": "^18.0.9",
+    "express": "^5.3.0",
+    "mongoose": "^8.19.2"
+  }
+}

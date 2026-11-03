@@ -1,24 +1,6 @@
 import mongoose from 'mongoose';
 import Recinto from './recinto.js';
 
-const eventoSchema = new mongoose.Schem({
-    nombre: {
-        type: String,
-        required: true,
-        minlength: 5
-    },
-    fecha: {
-        type: Date,
-        required: true
-    },
-    entradas: [entradaSchema],
-    recinto: {
-        type: mongoose.Schema.Types.ObjectId,
-        ref: 'Recinto',
-        required: true
-    }
-});
-
 const entradaSchema = new mongoose.Schema({
     tipo: {
         type: String,
@@ -35,6 +17,24 @@ const entradaSchema = new mongoose.Schema({
         required: true,
         min: 0
    },
+});
+
+const eventoSchema = new mongoose.Schema({
+    nombre: {
+        type: String,
+        required: true,
+        minlength: 5
+    },
+    fecha: {
+        type: Date,
+        required: true
+    },
+    entradas: [entradaSchema],
+    recinto: {
+        type: mongoose.Schema.Types.ObjectId,
+        ref: 'Recinto',
+        required: true
+    }
 });
 
 const Evento = mongoose.model('Evento', eventoSchema);
