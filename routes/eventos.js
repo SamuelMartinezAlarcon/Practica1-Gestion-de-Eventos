@@ -94,11 +94,17 @@ router.delete('/eventos/:id', async (req, res) => {
     }
 });
 
+
 router.get('/eventos/entradas/:idEvento/:tipoEntrada', async (req, res) => {
     const { idEvento, tipoEntrada } = req.params;
 
     try {    
         const evento = await Event.findById(idEvento);
+
+        if (!evento) {
+            return res.status(404).send({ ok: false, error: `Error obteniendo datos de entrada para evento ${idEvento}` });
+        }
+
         const entrada = evento.entradas.find(
             e => e.tipo === tipoEntrada
         );
@@ -121,6 +127,7 @@ router.put('/eventos/entradas/:idEvento/:tipoEntrada/:cantidad', async (req, res
 
     try {
         const evento = await Event.findById(idEvento);
+        
         const entrada = evento.entradas.find(
             e => e.tipo === tipoEntrada
         );
