@@ -1,0 +1,326 @@
+{
+  "info": {
+    "_postman_id": "a4214455-17ba-4ba1-afc8-b8bae28c0370",
+    "name": "Práctica 1 - Despliegue de Aplicaciones Web - Samuel Martínez Alarcón",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "58970227",
+    "_collection_link": "https://go.postman.co/collection/58970227-a4214455-17ba-4ba1-afc8-b8bae28c0370?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "Eventos",
+      "item": [
+        {
+          "name": "GET /eventos",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://practica1-gestion-de-eventos.onrender.com/eventos",
+              "protocol": "https",
+              "host": [
+                "practica1-gestion-de-eventos",
+                "onrender",
+                "com"
+              ],
+              "path": [
+                "eventos"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "POST /eventos/",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"nombre\": \"Evento 1\",\r\n  \"fecha\": \"2026-12-15\",\r\n  \"entradas\": [\r\n    {\r\n      \"tipo\": \"General\",\r\n      \"precio\": 15,\r\n      \"disponibles\": 200\r\n    },\r\n    {\r\n      \"tipo\": \"VIP\",\r\n      \"precio\": 35,\r\n      \"disponibles\": 50\r\n    }\r\n  ],\r\n  \"recinto\": \"6aef35cdb381b6ee7bc425dd\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "https://practica1-gestion-de-eventos.onrender.com/eventos/",
+              "protocol": "https",
+              "host": [
+                "practica1-gestion-de-eventos",
+                "onrender",
+                "com"
+              ],
+              "path": [
+                "eventos",
+                ""
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "GET / eventos/6aef3a18586a6d16cf882a75",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://practica1-gestion-de-eventos.onrender.com/eventos/6aef3a18586a6d16cf882a75",
+              "protocol": "https",
+              "host": [
+                "practica1-gestion-de-eventos",
+                "onrender",
+                "com"
+              ],
+              "path": [
+                "eventos",
+                "6aef3a18586a6d16cf882a75"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "GET /eventos/localidad/Barcelona",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://practica1-gestion-de-eventos.onrender.com/eventos/localidad/Barcelona",
+              "protocol": "https",
+              "host": [
+                "practica1-gestion-de-eventos",
+                "onrender",
+                "com"
+              ],
+              "path": [
+                "eventos",
+                "localidad",
+                "Barcelona"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "PUT /eventos/6aef3a18586a6d16cf882a75",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"nombre\": \"Evento 1 actualizado\",\r\n    \"fecha\": \"2026-12-20\",\r\n    \"entradas\": [\r\n        {\r\n            \"tipo\": \"General\",\r\n            \"precio\": 20,\r\n            \"disponibles\": 150\r\n        },\r\n        {\r\n            \"tipo\": \"VIP\",\r\n            \"precio\": 25,\r\n            \"disponibles\": 30\r\n        }\r\n    ],\r\n    \"recinto\": \"6aef35cdb381b6ee7bc425dd\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "https://practica1-gestion-de-eventos.onrender.com/eventos/6aef3a18586a6d16cf882a75",
+              "protocol": "https",
+              "host": [
+                "practica1-gestion-de-eventos",
+                "onrender",
+                "com"
+              ],
+              "path": [
+                "eventos",
+                "6aef3a18586a6d16cf882a75"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "DELETE /eventos/6aef35d9b381b6ee7bc425df",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "https://practica1-gestion-de-eventos.onrender.com/eventos/6aef35d9b381b6ee7bc425df",
+              "protocol": "https",
+              "host": [
+                "practica1-gestion-de-eventos",
+                "onrender",
+                "com"
+              ],
+              "path": [
+                "eventos",
+                "6aef35d9b381b6ee7bc425df"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "GET /eventos/entradas/6aef3a18586a6d16cf882a75/VIP",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://practica1-gestion-de-eventos.onrender.com/eventos/entradas/6aef3a18586a6d16cf882a75/VIP",
+              "protocol": "https",
+              "host": [
+                "practica1-gestion-de-eventos",
+                "onrender",
+                "com"
+              ],
+              "path": [
+                "eventos",
+                "entradas",
+                "6aef3a18586a6d16cf882a75",
+                "VIP"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "PUT /eventos/entradas/6aef3a18586a6d16cf882a75/VIP/1",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "url": {
+              "raw": "https://practica1-gestion-de-eventos.onrender.com/eventos/entradas/6aef3a18586a6d16cf882a75/VIP/28",
+              "protocol": "https",
+              "host": [
+                "practica1-gestion-de-eventos",
+                "onrender",
+                "com"
+              ],
+              "path": [
+                "eventos",
+                "entradas",
+                "6aef3a18586a6d16cf882a75",
+                "VIP",
+                "28"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Recintos",
+      "item": [
+        {
+          "name": "GET /recintos",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://practica1-gestion-de-eventos.onrender.com/recintos",
+              "protocol": "https",
+              "host": [
+                "practica1-gestion-de-eventos",
+                "onrender",
+                "com"
+              ],
+              "path": [
+                "recintos"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "POST /recintos/",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"nombre\": \"Recinto Evento 1\",\r\n  \"direccion\": \"Calle Principal 123\",\r\n  \"localidad\": \"Barcelona\",\r\n  \"aforoMaximo\": 500\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "https://practica1-gestion-de-eventos.onrender.com/recintos/",
+              "protocol": "https",
+              "host": [
+                "practica1-gestion-de-eventos",
+                "onrender",
+                "com"
+              ],
+              "path": [
+                "recintos",
+                ""
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "GET / recintos/6aef35cdb381b6ee7bc425dd",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://practica1-gestion-de-eventos.onrender.com/recintos/6aef35cdb381b6ee7bc425dd",
+              "protocol": "https",
+              "host": [
+                "practica1-gestion-de-eventos",
+                "onrender",
+                "com"
+              ],
+              "path": [
+                "recintos",
+                "6aef35cdb381b6ee7bc425dd"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "GET /eventos/localidad/Barcelona",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://practica1-gestion-de-eventos.onrender.com/eventos/localidad/Barcelona",
+              "protocol": "https",
+              "host": [
+                "practica1-gestion-de-eventos",
+                "onrender",
+                "com"
+              ],
+              "path": [
+                "eventos",
+                "localidad",
+                "Barcelona"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "DELETE /recintos/6aef35cdb381b6ee7bc425dd",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "https://practica1-gestion-de-eventos.onrender.com/recintos/6aef35cdb381b6ee7bc425dd",
+              "protocol": "https",
+              "host": [
+                "practica1-gestion-de-eventos",
+                "onrender",
+                "com"
+              ],
+              "path": [
+                "recintos",
+                "6aef35cdb381b6ee7bc425dd"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    }
+  ]
+}
