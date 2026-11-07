@@ -1,3 +1,3 @@
 node_modules/
 .env
-mongoDB-password.txt
+mongoDB-conectionURI.txt
