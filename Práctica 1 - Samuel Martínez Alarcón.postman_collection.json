@@ -37,7 +37,7 @@
             "header": [],
             "body": {
               "mode": "raw",
-              "raw": "{\r\n  \"nombre\": \"Evento 1\",\r\n  \"fecha\": \"2026-12-15\",\r\n  \"entradas\": [\r\n    {\r\n      \"tipo\": \"General\",\r\n      \"precio\": 15,\r\n      \"disponibles\": 200\r\n    },\r\n    {\r\n      \"tipo\": \"VIP\",\r\n      \"precio\": 35,\r\n      \"disponibles\": 50\r\n    }\r\n  ],\r\n  \"recinto\": \"6aef35cdb381b6ee7bc425dd\"\r\n}",
+              "raw": "{\r\n  \"nombre\": \"Evento 1\",\r\n  \"fecha\": \"2026-12-15\",\r\n  \"entradas\": [\r\n    {\r\n      \"tipo\": \"General\",\r\n      \"precio\": 15,\r\n      \"disponibles\": 200\r\n    },\r\n    {\r\n      \"tipo\": \"VIP\",\r\n      \"precio\": 35,\r\n      \"disponibles\": 50\r\n    }\r\n  ],\r\n  \"recinto\": \"6aef453ea6690a1a592f13b2\"\r\n}",
               "options": {
                 "raw": {
                   "language": "json"
@@ -104,7 +104,7 @@
           "response": []
         },
         {
-          "name": "PUT /eventos/6aef3a18586a6d16cf882a75",
+          "name": "PUT /eventos/6aef4535a6690a1a592f13ab",
           "request": {
             "method": "PUT",
             "header": [],
@@ -118,7 +118,7 @@
               }
             },
             "url": {
-              "raw": "https://practica1-gestion-de-eventos.onrender.com/eventos/6aef3a18586a6d16cf882a75",
+              "raw": "https://practica1-gestion-de-eventos.onrender.com/eventos/6aef4535a6690a1a592f13ab",
               "protocol": "https",
               "host": [
                 "practica1-gestion-de-eventos",
@@ -127,7 +127,7 @@
               ],
               "path": [
                 "eventos",
-                "6aef3a18586a6d16cf882a75"
+                "6aef4535a6690a1a592f13ab"
               ]
             }
           },
@@ -178,7 +178,7 @@
           "response": []
         },
         {
-          "name": "PUT /eventos/entradas/6aef3a18586a6d16cf882a75/VIP/1",
+          "name": "PUT /eventos/entradas/6aef4535a6690a1a592f13ab/VIP/1",
           "request": {
             "method": "PUT",
             "header": [],
@@ -305,7 +305,7 @@
             "method": "DELETE",
             "header": [],
             "url": {
-              "raw": "https://practica1-gestion-de-eventos.onrender.com/recintos/6aef35cdb381b6ee7bc425dd",
+              "raw": "https://practica1-gestion-de-eventos.onrender.com/recintos/6aef453ea6690a1a592f13b2",
               "protocol": "https",
               "host": [
                 "practica1-gestion-de-eventos",
@@ -314,7 +314,7 @@
               ],
               "path": [
                 "recintos",
-                "6aef35cdb381b6ee7bc425dd"
+                "6aef453ea6690a1a592f13b2"
               ]
             }
           },
