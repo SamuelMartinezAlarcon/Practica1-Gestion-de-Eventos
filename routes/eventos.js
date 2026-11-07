@@ -32,7 +32,14 @@ router.get('/eventos/:id', async (req, res) => {
 });
 
 router.get('/eventos/localidad/:nombre', async (req, res) => {
-    const resultado = await Event.find().populate({ localidad: req.params.nombre });
+    // Utilizo el populate para que busque el id del recinto en la colección de recintos 
+    // y rellene el campo recinto de eventos con los datos del recinto usando path, 
+    // y con match filtro por localidad
+    const eventos = await Event.find().populate({
+        path: 'recinto',
+        match: { localidad: req.params.nombre }
+    });
+    const resultado = eventos.filter(evento => evento.recinto !== null);
 
     try {
         if (resultado) {
